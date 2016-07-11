@@ -7,6 +7,10 @@
     "build": "webpack --optimize-minimize",
     "watch": "babel src -w -d dist"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PascaleBeier/JavaScriptTextTruncate.git"
+  },
   "keywords": [
     "JavaScript",
     "Truncate",
