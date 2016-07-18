@@ -6,7 +6,7 @@
     </head>
 <body>
 
-<div class="dot-dot-dot">
+<div class="truncate">
     Error veritatis rem voluptatem natus. Laudantium corrupti reiciendis voluptatem vel. Reiciendis est voluptatem facilis esse molestiae quod omnis.
 Suscipit iste consequuntur quo quidem fugiat officia qui. Et consequatur nemo possimus libero sit consequuntur dolore. Dolorem qui numquam aut quas sint qui in. Ratione unde blanditiis illo.
 Eligendi dicta ad mollitia non laboriosam minus est. Et ad qui quasi ea incidunt impedit ad laborum. Minima nesciunt amet iure. Rerum molestiae eaque minus. Molestias possimus necessitatibus et molestiae omnis.
@@ -14,7 +14,7 @@ Nihil eius labore suscipit est commodi voluptas repellendus. Distinctio expedita
 Dicta iusto facilis earum blanditiis soluta et dignissimos. Aliquam et aliquid illum. Officia corrupti nobis voluptatem voluptatum. Ea quidem et enim.
 </div>
 
-<div class="dot-dot-dot">
+<div class="truncate">
     Error veritatis rem voluptatem natus. Laudantium corrupti reiciendis voluptatem vel. Reiciendis est voluptatem facilis esse molestiae quod omnis.
 Suscipit iste consequuntur quo quidem fugiat officia qui. Et consequatur nemo possimus libero sit consequuntur dolore. Dolorem qui numquam aut quas sint qui in. Ratione unde blanditiis illo.
 Eligendi dicta ad mollitia non laboriosam minus est. Et ad qui quasi ea incidunt impedit ad laborum. Minima nesciunt amet iure. Rerum molestiae eaque minus. Molestias possimus necessitatibus et molestiae omnis.
@@ -22,7 +22,7 @@ Nihil eius labore suscipit est commodi voluptas repellendus. Distinctio expedita
 Dicta iusto facilis earum blanditiis soluta et dignissimos. Aliquam et aliquid illum. Officia corrupti nobis voluptatem voluptatum. Ea quidem et enim.
 </div>
 
-<div class="dot-dot-dot">
+<div class="truncate">
     Error veritatis rem voluptatem natus. Laudantium corrupti reiciendis voluptatem vel. Reiciendis est voluptatem facilis esse molestiae quod omnis.
 Suscipit iste consequuntur quo quidem fugiat officia qui. Et consequatur nemo possimus libero sit consequuntur dolore. Dolorem qui numquam aut quas sint qui in. Ratione unde blanditiis illo.
 Eligendi dicta ad mollitia non laboriosam minus est. Et ad qui quasi ea incidunt impedit ad laborum. Minima nesciunt amet iure. Rerum molestiae eaque minus. Molestias possimus necessitatibus et molestiae omnis.
@@ -30,7 +30,7 @@ Nihil eius labore suscipit est commodi voluptas repellendus. Distinctio expedita
 Dicta iusto facilis earum blanditiis soluta et dignissimos. Aliquam et aliquid illum. Officia corrupti nobis voluptatem voluptatum. Ea quidem et enim.
 </div>
 
-<div class="dot-dot-dot">
+<div class="truncate">
     Error veritatis rem voluptatem natus. Laudantium corrupti reiciendis voluptatem vel. Reiciendis est voluptatem facilis esse molestiae quod omnis.
 Suscipit iste consequuntur quo quidem fugiat officia qui. Et consequatur nemo possimus libero sit consequuntur dolore. Dolorem qui numquam aut quas sint qui in. Ratione unde blanditiis illo.
 Eligendi dicta ad mollitia non laboriosam minus est. Et ad qui quasi ea incidunt impedit ad laborum. Minima nesciunt amet iure. Rerum molestiae eaque minus. Molestias possimus necessitatibus et molestiae omnis.
@@ -39,17 +39,17 @@ Dicta iusto facilis earum blanditiis soluta et dignissimos. Aliquam et aliquid i
 </div>
 
 <style>
-.dot-dot-dot {
+.truncate {
     margin: 3rem;
 }
 </style>
 
 <script src="../dist/javascript-text-truncate.js"></script>
 <script>
-    new JavaScriptTextTruncate({
-        className: 'dot-dot-dot',
-        length: 120,
-        seperator: ''
+    new TruncatedText({
+        el: '.truncate',
+        length: 50,
+        seperator: '...'
     });
 </script>
 </html>

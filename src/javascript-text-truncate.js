@@ -1,10 +1,14 @@
-class JavaScriptTextTruncate {
+export default class TruncatedText {
     constructor(options) {
-        const elements = document.getElementsByClassName(options.className)
+        const elements = document.querySelectorAll(options.el) || null
+        const length = options.length || 255
+        const seperator = options.seperator || 'Read More ...'
    
-        for (let el of elements) {
-            el.innerHTML.length > options.length ? el.innerHTML = el.innerHTML.substr(0, options.length - options.seperator.length) + options.seperator : null
+        if (elements != null) {
+            for (let el of elements) {
+                el.innerHTML.length > length ? el.innerHTML = el.innerHTML.substr(0, length - seperator.length) + seperator : 0
+            }
         }
     }
 }
-window.JavaScriptTextTruncate = JavaScriptTextTruncate
+window.TruncatedText = TruncatedText
