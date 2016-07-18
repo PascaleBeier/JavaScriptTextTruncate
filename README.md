@@ -68,6 +68,10 @@ new TruncatedText({
 })
 ```
 
+### CHANGELOG
+
+See [CHANGELOG](CHANGELOG.md)
+
 ### LICENSE
 
 The MIT License.
