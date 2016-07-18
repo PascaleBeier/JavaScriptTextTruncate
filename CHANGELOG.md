@@ -16,7 +16,7 @@ this:
 
 ```javascript
 new JavaScriptTextTruncate({
-    className: 'truncate
+    className: 'truncate'
 })
 ```
 
