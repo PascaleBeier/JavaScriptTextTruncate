@@ -23,7 +23,7 @@ Soluta est vel sed id molestiae recusandae non. In harum minima aut pariatur qua
 #### Browser Global
 
 ```html
-<script src="javascript-text-truncate.js"></script>
+<script src="javascript-text-truncate.min.js"></script>
 <script>
     new TruncatedText({
         el: '.truncate',
@@ -42,7 +42,7 @@ new TruncatedText({
     el: '.truncate',
     length: 255,
     seperator: 'Read More ...'  
-});
+})
 ```
 
 #### ES5
@@ -70,8 +70,8 @@ new TruncatedText({
 
 ### CHANGELOG
 
-See [CHANGELOG](CHANGELOG.md)
+See [CHANGELOG](CHANGELOG.md).
 
 ### LICENSE
 
-The MIT License.
+See [LICENSE](License.md).
