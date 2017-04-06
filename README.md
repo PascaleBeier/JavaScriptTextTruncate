@@ -13,60 +13,37 @@ $ git clone https://github.com/PascaleBeier/JavaScriptTextTruncate
 
 ### Usage
 
+Simply add the the attribute `data-text-truncate` to the element which contents you want to truncate.
+
 ```html
-<div class="truncate">
-Est soluta rerum velit quasi quos et esse. Velit dolore quis autem distinctio dolor molestiae placeat. Rerum est magni quae et quo non voluptatem exercitationem. Molestiae et voluptas perferendis deserunt velit voluptatem. Earum quo consequuntur velit tempore cum nihil sint omnis.
-Soluta est vel sed id molestiae recusandae non. In harum minima aut pariatur quam eligendi dolores. Consequatur quod deleniti adipisci corporis totam. Non autem rerum iusto vero accusantium numquam nesciunt sequi.
-</div>
+<p class="truncate" data-text-truncate>
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et d
+</p>
 ```
 
-#### Browser Global
+The default length is 100 characters. The above text is 110 characters and would be stripped down to 100 characters.
+
+#### Options
+
+You can pass additional attributes to further configure text truncation. Let's stick to our example.
+Let's say you don't want the text to be any longer than 25 characters:
+
+```html
+<p class="truncate" data-text-truncate data-text-truncate-length="25">
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et d
+</p>
+```
+
+
+
+
+### Installation
 
 ```html
 <script src="javascript-text-truncate.min.js"></script>
-<script>
-    new TruncatedText({
-        el: '.truncate',
-        length: 255,
-        seperator: 'Read More ...'  
-    });
-</script>
 ```
 
-#### ES6
-
-```javascript
-import TruncatedText from 'javascript-text-truncate'
-
-new TruncatedText({
-    el: '.truncate',
-    length: 255,
-    seperator: 'Read More ...'  
-})
-```
-
-#### ES5
-
-```javascript
-var TruncatedText = require('javascript-text-truncate');
-
-new TruncatedText({
-    el: '.truncate',
-    length: 255,
-    seperator: 'Read More ...'  
-});
-```
-
-### Options
-
-```javascript
-
-new TruncatedText({
-    el: '.truncate', // Element containg text to be truncated. Defaults to null.
-    length: 255, // Truncate text after the given amount of charakters. Defaults to 255.
-    seperator: 'Read More ...' // Text to be placed after the truncated text. Defaults to 'Read More ...'
-})
-```
+Yup, it's easy as that! This package is meant to be consumed in the browser.
 
 ### CHANGELOG
 

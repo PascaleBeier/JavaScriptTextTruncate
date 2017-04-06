@@ -1,3 +1,9 @@
+## 3.0.0
+
+### Changes
+
+- API changed to data-attributes. See README
+
 ## 2.0.1
 
 ### Changes
