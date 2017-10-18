@@ -1,25 +1,19 @@
-const webpack = require('webpack')
+const path = require("path");
 
 module.exports = {
-   entry: './src/main.js',
-   output: {
-     path: './dist',
-     filename: 'javascript-text-truncate.min.js'
-   },
-   module: {
-      rules: [
-         {
-            test: /\.js$/,
-            exclude: /node_modules/,
-            loader: 'babel',
-         }
-      ]
-   },
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: true
+  entry: "./src/main.js",
+  output: {
+    path: path.resolve(__dirname, "dist"),
+    filename: "javascript-text-truncate.min.js",
+    library: "truncate"
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "babel-loader",
       }
-    })
-  ]
+    ]
+  }
 }

@@ -25,10 +25,10 @@ Soluta est vel sed id molestiae recusandae non. In harum minima aut pariatur qua
 ```html
 <script src="javascript-text-truncate.min.js"></script>
 <script>
-    new TruncatedText({
+    truncate({
         el: '.truncate',
         length: 255,
-        seperator: 'Read More ...'  
+        seperator: 'Read More ...'
     });
 </script>
 ```
@@ -36,32 +36,20 @@ Soluta est vel sed id molestiae recusandae non. In harum minima aut pariatur qua
 #### ES6
 
 ```javascript
-import TruncatedText from 'javascript-text-truncate'
+import * as truncate from 'javascript-text-truncate'
 
-new TruncatedText({
+truncate({
     el: '.truncate',
     length: 255,
-    seperator: 'Read More ...'  
+    seperator: 'Read More ...'
 })
-```
-
-#### ES5
-
-```javascript
-var TruncatedText = require('javascript-text-truncate');
-
-new TruncatedText({
-    el: '.truncate',
-    length: 255,
-    seperator: 'Read More ...'  
-});
 ```
 
 ### Options
 
 ```javascript
 
-new TruncatedText({
+truncate({
     el: '.truncate', // Element containg text to be truncated. Defaults to null.
     length: 255, // Truncate text after the given amount of charakters. Defaults to 255.
     seperator: 'Read More ...' // Text to be placed after the truncated text. Defaults to 'Read More ...'

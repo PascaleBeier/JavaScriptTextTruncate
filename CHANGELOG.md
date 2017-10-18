@@ -1,3 +1,16 @@
+## 3.0.0
+
+> Simplified API and updated tooling.
+
+### Changes
+
+- This library exposes a single method: `truncate()`. In the past, it did expose a class.
+
+### Tooling
+
+- Switched from `babel-preset-es2015` to `babel-preset-env`
+- Updated DevDependencies
+
 ## 2.0.1
 
 ### Changes
